@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo do Clique</title>
+  <style>
+    body {
+      background: #222;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+    }
+    button {
+      font-size: 30px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🖱️ Jogo do Clique</h1>
+<p>Pontos: <span id="pontos">0</span></p>
+
+<button onclick="clicar()">CLICA!</button>
+
+<script>
+  let pontos = 0;
+
+  function clicar() {
+    pontos++;
+    document.getElementById("pontos").innerText = pontos;
+  }
+</script>
+
+</body>
+</html>
